@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="CustomCodingStandard">
+	<description>Custom coding standard</description>
+	<rule ref="Generic.CodeAnalysis"/>
+	<rule ref="Generic.ControlStructures"/>
+	<rule ref="Generic.NamingConventions.ConstructorName.OldStyle"/>
+	<rule ref="Generic.PHP">
+		<exclude name="Generic.PHP.CharacterBeforePHPOpeningTag"/>
+		<exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
+		<exclude name="Generic.PHP.UpperCaseConstant"/>
+	</rule>
+	<rule ref="Generic.Strings" />
+    
+    <rule ref="PEAR.Files.IncludingFile"/>
+    <rule ref="PEAR.Functions.ValidDefaultValue"/>
+
+	<rule ref="PSR2" />
+
+	<rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
+	<rule ref="Squiz.Scope"/>
+	<rule ref="Squiz.Strings.EchoedStrings"/>
+</ruleset>

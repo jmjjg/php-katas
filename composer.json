@@ -1,0 +1,31 @@
+{
+    "name": "jmjjg/php-katas",
+    "version": "1.0.0",
+    "description": "...",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian BUFFIN"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/basics.php"
+        ],
+        "psr-4": {
+            "Katas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": { 
+            "Katas\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd": "2.6.0",
+        "phpunit/phpunit": "6.5.13",
+        "phpunit/php-code-coverage": "5.3.2"
+    }
+}
