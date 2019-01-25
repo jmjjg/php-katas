@@ -6,10 +6,11 @@
 * Roman numerals
     * http://codingdojo.org/kata/RomanNumerals/
     * vendor/bin/phpunit --bootstrap vendor/autoload.php tests/RomanNumeralsTest
-*  Bowling Game
+* Bowling Game
     * http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
     * http://codingdojo.org/kata/Bowling/
     * vendor/bin/phpunit --bootstrap vendor/autoload.php tests/BowlingGameTest
-* Word Wrap
-    * http://codingdojo.org/kata/WordWrap/
-    * vendor/bin/phpunit --bootstrap vendor/autoload.php tests/WordWrapTest
+* Diamond
+    * http://codingdojo.org/kata/Diamond/
+    * https://www.schmengler-se.de/en/2017/03/tdd-kata-10-anagrams/
+    * https://www.codewars.com/kata/complete-the-pattern-number-9-diamond
