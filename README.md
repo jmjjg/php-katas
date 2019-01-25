@@ -14,3 +14,4 @@
     * http://codingdojo.org/kata/Diamond/
     * https://www.schmengler-se.de/en/2017/03/tdd-kata-10-anagrams/
     * https://www.codewars.com/kata/complete-the-pattern-number-9-diamond
+    * vendor/bin/phpunit --bootstrap vendor/autoload.php tests/DiamondTest.phpd

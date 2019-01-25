@@ -3,7 +3,7 @@ namespace Katas;
 
 class Diamond
 {
-    protected static function line($idx, $min, $target)
+    protected static function line($idx, $min, $target):string
     {
         $result = '';
         $left = $target-$idx;

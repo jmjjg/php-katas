@@ -73,7 +73,7 @@ TXT;
             ['C', $letterC],
             ['D', $letterD],
             ['E', $letterE],
-            ['F', $letterF],
+            ['F', $letterF]
         ];
     }
 }
