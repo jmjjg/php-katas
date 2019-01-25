@@ -8,12 +8,19 @@ __src__="$__root__/src"
 __tests__="$__root__/tests"
 __vendor__="$__root__/vendor"
 
+exit_status=0
 phpcs="$__vendor__/bin/phpcs"
 phpunit="$__vendor__/bin/phpunit"
 phpmd="$__vendor__/bin/phpmd"
 
-$phpunit --bootstrap "$__vendor__/autoload.php" "$__tests__" \
-&& (\
-    $phpcs --standard="$__config__/phpcs.xml" "$__src__" "$__tests__" \
-    ; $phpmd "$__src__,$__tests__" text "$__config__/phpmd.xml" \
+$phpunit --bootstrap "$__vendor__/autoload.php" "$__tests__"
+exit_status="$?"
+
+(
+    if [ $exit_status -eq 0 ];then \
+        $phpcs --standard="$__config__/phpcs.xml" "$__src__" "$__tests__"
+        $phpmd "$__src__,$__tests__" text "$__config__/phpmd.xml"
+    fi
 )
+
+exit "$exit_status"
